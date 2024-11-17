@@ -15,7 +15,7 @@ fn main() {
 fn winit_main(window: &Window, handler: &mut WinitHandler) {
 
     // Define the window event handler
-    // `WinitEvent` recreate the usual `match` pattern from `0.29` 
+    // `WinitEvent` recreates the usual `match` pattern from `0.29` 
     handler.on_window_event(move |event_loop: &ActiveEventLoop, event: WinitEvent|{
         match event {
             WinitEvent::WindowEvent(window_id, window_event) => {
